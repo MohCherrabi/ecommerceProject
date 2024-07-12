@@ -12,7 +12,7 @@ this project for shopping online for tangible products
 
 ## Installation
 
-Install my-project with npm
+Install my-project with composer
 
 ```bash
   composer install 
