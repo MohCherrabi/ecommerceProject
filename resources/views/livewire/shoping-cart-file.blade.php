@@ -87,7 +87,7 @@
                     <span class="stt-price">Mad {{$cartContentGeneral['total']}}</span>
                 </div>
                 <div class="btn-checkout">
-                    <a href="#" class="btn checkout">Check out</a>
+                    <a href="{{route('pay')}}" class="btn checkout">Check out</a>
                 </div>
 
             </div>

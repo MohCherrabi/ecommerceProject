@@ -153,8 +153,10 @@ input[type="search"]::placeholder{
 }
 select{
     background: transparent;
-    border: none;
-    color: #ffffff;
+    border: 1px solid black;
+    color: black;
+    border-radius: 20px;
+    cursor: pointer;
 }
 select option{
     color: #333333;
@@ -11728,7 +11730,7 @@ body.open-quickview-block .biolife-quickview-block{
     .contain-product__deal-layout img{
         display: inline-block;
     }
-    .biolife-banner__style-01 .text-content .third-line, 
+    .biolife-banner__style-01 .text-content .third-line,
     .biolife-banner__style-01 .text-content .second-line{
         font-size: 30px;
         line-height: 40px;
@@ -13232,11 +13234,11 @@ body.open-quickview-block .biolife-quickview-block{
     .biolife-banner__style-04 .text-content{
         min-height: auto;
     }
-    .biolife-banner__style-14 .text2, 
-    .biolife-banner__style-09 .text2, 
+    .biolife-banner__style-14 .text2,
+    .biolife-banner__style-09 .text2,
     .biolife-banner__style-03 .text2,
-    .biolife-banner__style-13 .text2, 
-    .biolife-banner__style-08 .text2, 
+    .biolife-banner__style-13 .text2,
+    .biolife-banner__style-08 .text2,
     .biolife-banner__style-02 .text2{
         font-size: 25px;
     }

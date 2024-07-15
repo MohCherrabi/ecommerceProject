@@ -35,10 +35,10 @@
 
     /*Register Select Element*/
     if( $biolife_select.length ){
-        $biolife_select.niceSelect()
+        // $biolife_select.niceSelect()
     }
 
-    /*Minicart Scroll handle*/
+    // /*Minicart Scroll handle*/
     if( $scroll_items.length){
         $scroll_items.niceScroll();
     }
@@ -48,7 +48,7 @@
         $biolife_slide.biolife_init_carousel();
     }
 
-    /*Vertical Menu Handle*/
+    // /*Vertical Menu Handle*/
     if( $vertical_menu.length){
         $vertical_menu.biolife_vertical_menu();
     }
@@ -81,7 +81,7 @@
         $accodition.biolife_accodition_handle();
     }
 
-    /*Countdown*/
+    // /*Countdown*/
     if( $biolife_countdown.length){
         $biolife_countdown.biolife_countdown();
     }

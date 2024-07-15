@@ -524,25 +524,9 @@ use App\Models\Blog;
                             </li>
                             <li class="menu-item menu-item-has-children has-megamenu">
                                 <a href="#" class="menu-name" data-title="Pages">Demo</a>
-                                <div class="wrap-megamenu lg-width-800 md-full-width">
+                                <div class="wrap-megamenu lg-width-600 md-full-width">
                                     <div class="mega-content">
-                                        <div
-                                            class="col-lg-3 col-md-3 col-xs-12 md-margin-bottom-0 xs-margin-bottom-25">
-                                            <div class="wrap-custom-menu vertical-menu">
-                                                <h4 class="menu-title">Home Page</h4>
-                                                <ul class="menu">
-                                                    <li class="menu-item"><a href="home-01.html">Home 01</a></li>
-                                                    <li class="menu-item"><a href="home-02.html">Home 02</a></li>
-                                                    <li class="menu-item"><a href="index-2.html">Home 03</a></li>
-                                                    <li class="menu-item"><a href="home-03-green.html">Home 03
-                                                            Green</a></li>
-                                                    <li class="menu-item"><a href="home-04.html">Home 04</a></li>
-                                                    <li class="menu-item"><a href="home-04-light.html">Home 04
-                                                            Light</a></li>
-                                                    <li class="menu-item"><a href="home-05.html">Home 05</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
+
                                         <div
                                             class="col-lg-3 col-md-3 col-xs-12 md-margin-bottom-0 xs-margin-bottom-25">
                                             <div class="wrap-custom-menu vertical-menu">
@@ -575,26 +559,7 @@ use App\Models\Blog;
                                             <div class="wrap-custom-menu vertical-menu">
                                                 <h4 class="menu-title">Category Pages</h4>
                                                 <ul class="menu">
-                                                    <li class="menu-item"><a href="category-grid-3-cols.html">Grid
-                                                            3 Cols</a></li>
-                                                    <li class="menu-item"><a href="category-grid.html">Grid 4
-                                                            Cols</a></li>
-                                                    <li class="menu-item"><a href="category-grid-6-cols.html">Grid
-                                                            6 Cols</a></li>
-                                                    <li class="menu-item"><a
-                                                            href="category-grid-left-sidebar.html">Grid Left
-                                                            Sidebar</a></li>
-                                                    <li class="menu-item"><a
-                                                            href="category-grid-right-sidebar.html">Grid Right
-                                                            Sidebar</a></li>
-                                                    <li class="menu-item"><a href="category-list.html">List
-                                                            Full</a></li>
-                                                    <li class="menu-item"><a
-                                                            href="category-list-left-sidebar.html">List Left
-                                                            Sidebar</a></li>
-                                                    <li class="menu-item"><a
-                                                            href="category-list-right-sidebar.html">List Right
-                                                            Sidebar</a></li>
+                                                    <li class="menu-item"><a href="{{route('productsList')}}">List Products</a></li>
                                                 </ul>
                                             </div>
                                         </div>

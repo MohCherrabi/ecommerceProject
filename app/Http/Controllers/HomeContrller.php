@@ -52,24 +52,11 @@ class HomeContrller extends Controller
         return view('front-end.shoping_cart',compact('products'));
     }
 
-    public function checkout(){
-        $cartContentGeneral['nbItemCart'] = Cart::count();
-        $cartContentGeneral['total'] = Cart::total();
-
-        $cart = Cart::content();
-        $cartContent  = array();
-        $cartContentGeneral['nbItemCart'] = Cart::count();
-        $cartContentGeneral['total'] = Cart::SubTotal();
-        foreach($cart as $item){
-            $product = Product::findorFail($item->id);
-            array_push($cartContent,['id'=>$item->id,'price'=>$item->price,
-                                            'rowId'=>$item->rowId,'new_price_ht'=>$product->new_price_ht,
-                                            'qty'=>$item->qty,'image'=>$product->image,'name'=>$product->designation]);
-        }
-        return view('front-end.checkout',compact('cartContentGeneral','cartContent'));
-    }
-
     public function productsList(){
-        return view('front-end.products-list');
+        $products = Product::all();
+        return view('front-end.products_list',compact('products'));
+    }
+    public function productSingle(){
+        return view('front-end.product_single');
     }
 }

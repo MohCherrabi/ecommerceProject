@@ -27,7 +27,7 @@ class LoginController extends Controller
         if (Auth::guard('user')->attempt(['email' => $request->email, 'password' => $request->password])) {
                 return redirect()->intended(RouteServiceProvider::USER);
             }else{
-                return back()->withErrors(['email' => 'Invalid email or password'])->onlyInput('emial');
+                return back()->withErrors(['email' => 'Invalid email or password'])->onlyInput('email');
             }
     }
 
@@ -36,7 +36,7 @@ class LoginController extends Controller
     }
 
     public function logout(){
-        
+
         Auth::guard('user')->logout();
 
         return redirect('/');
